@@ -1,12 +1,51 @@
-body{
-    background-color: #d4d4d4;
+header{
+    text-align: center;
+    font-family: monospace;
+    color: white;
 }
+
+/* Original Chad background */
+/* body{
+    background-color: #d4d4d4;
+    background-repeat: repeat;
+    background-image: url(../assets/images/light_honeycomb.png)
+} */
+
+
+/* NEW FANCY BACKGROUND */
+body {
+    background-color: #193c6d;
+    filter: progid: DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#003073', endColorstr='#029797');
+    background-image: url(//img.alicdn.com/tps/TB1d.u8MXXXXXXuXFXXXXXXXXXX-1900-790.jpg);
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0, #003073), color-stop(100%, #029797));
+    background-image: -webkit-linear-gradient(135deg, #003073, #029797);
+    background-image: -moz-linear-gradient(45deg, #003073, #029797);
+    background-image: -ms-linear-gradient(45deg, #003073 0, #029797 100%);
+    background-image: -o-linear-gradient(45deg, #003073, #029797);
+    background-image: linear-gradient(135deg, #003073, #029797);
+    text-align: center;
+    margin: 0px;
+    overflow: hidden;
+}
+
 .content{
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: white;
+    padding: 30px;
+    border: black;
+    border-style: groove;
+    border-width: thin;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow:20px 20px 20px grey;
 }
 
 #display{
     width: 100%;
+    height: 100px;
+    text-align: center;
+    border-style: dotted;
+    border-color: #777777;
+    background: rgb(223, 221, 221);
 }
