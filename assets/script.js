@@ -3,6 +3,7 @@ var symbols = "!@#$%^&*()-+";
 var numbers = "1234567890";
 var lower = "abcdefghijklmnopqrstuvwxyz";
 var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
 // Generator Button Function
 function generatePassword() {
 
@@ -72,34 +73,20 @@ function generatePassword() {
     // Place Password in textbox
     document.getElementById("display").value = userPass
 
-    // Copied Data Variable
-    // var clipboard = new Clipboard(".copy");
-
-    // //Copy Password to Clipboard
-    // copyButton.setAttribute("data-clipboard-text", userPassword)
-
-    // clipboard.on('success', function (e) {
-    //     console.info('Action:', e.action);
-    //     console.info('Text:', e.text);
-    //     console.info('Trigger:', e.trigger);
-
-    //     e.clearSelection()
-    // })
-
-    // clipboard.on('error', function (e) {
-    //     console.error('Action:', e.action);
-    //     console.error('Trigger:', e.trigger);
-    // });
 }
+
+// //Copy Password to Clipboard
 function copyPassword() {
-    var copyText = document.getElementById("passwordBox");
+    var copyText = document.getElementById("display");
     copyText.select();
     copyText.setSelectionRange(0, 99999);
     document.execCommand("copy");
 }
 
 
-// SUPER FANCY BACKGROUND
+//***** FANCY BACKGROUND CODE - WARNING: VERY VERY VERY LARGE *****//
+
+
 // three.js - https://github.com/mrdoob/three.js
 'use strict';var THREE=THREE||{REVISION:"56"};self.console=self.console||{info:function(){},log:function(){},debug:function(){},warn:function(){},error:function(){}};self.Int32Array=self.Int32Array||Array;self.Float32Array=self.Float32Array||Array;String.prototype.trim=String.prototype.trim||function(){return this.replace(/^\s+|\s+$/g,"")};
 THREE.extend=function(a,b){if(Object.keys)for(var c=Object.keys(b),d=0,e=c.length;d<e;d++){var f=c[d];Object.defineProperty(a,f,Object.getOwnPropertyDescriptor(b,f))}else for(f in c={}.hasOwnProperty,b)c.call(b,f)&&(a[f]=b[f]);return a};

@@ -1,8 +1,10 @@
 # Unit 03 JavaScript Homework: Password Generator
 
+This is a Password Generator built for a homework assignment and as such, follows certain parameters:
+
 ## Description
 
-Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code.
+"Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code.
 
 The user will be prompted to choose from the following password criteria:
 
@@ -10,7 +12,7 @@ The user will be prompted to choose from the following password criteria:
 
 * Character type:
 
-  * Special characters ([see examples](https://www.owasp.org/index.php/Password_special_characters))
+  * Special characters
 
   * Numeric characters
 
@@ -26,61 +28,29 @@ As a bonus, the user should also have the option to click a button to copy the p
 
 Your application should have a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
 
-Your application should be deployed to GitHub Pages.
+## Functionality
 
-Your application's GitHub repository should contain a README.md file explaining the purpose and functionality of the application. The README.md file should include a screenshot of the completed application as well as a link to the deployed GitHub Pages URL.
+This Password generator works as follows:
 
-![password generator demo](./Assets/03-JavaScript-homework-demo.png)
+ - When the user clicks on the Generate Password button they receive several prompts
+ 
+ - The first requests a password length of between 8 and 128 characters.
 
-## User Story
+ - Four subsequent prompts confirm Special, Numeric, Lowercase, and Uppercase characters.
 
-AS AN employee with access to sensitive data
+ - Once these specifications are established, a password is randomly created and displayed in the appropriate textbox.
 
-I WANT to randomly generate a password that meets certain criteria
+ - The "Copy to Clipboard" button can be pushed to copy the generated password to the clipboard.
 
-SO THAT I can create a strong password that provides greater security
+ - That's it! The process can be repeated any number of times and with new parameters.
 
-## Business Context
 
-For companies that handle large amounts of sensitive data, weak passwords can pose a real security threat. An application that can generate strong passwords quickly and effortlessly saves employees time and ensures secure access to data.
+## Additional Details
 
-## Acceptance Criteria
+An animated background was added via: "https://github.com/mrdoob/three.js"
 
-GIVEN that a user needs a new, secure password
+It includes assets in both the CSS and jscript files.
 
-WHEN prompted for password criteria
+## Functional Screenshot
 
-THEN a password is generated
-
-- - -
-
-## Commit Early and Often
-
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
-
-* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
-
-* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
-
-Follow these guidelines for committing:
-
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
-
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
-
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
-
-* Test your application before you commit to ensure functionality at every step in the development process.
-
-We would like you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+![Screenshot](assets/images/Screen_Shot.png)
