@@ -1,6 +1,6 @@
 # Unit 03 JavaScript Homework: Password Generator
 
-Wokring URL: https://n0matic.github.io/Password.Generator.io/
+Working URL: https://n0matic.github.io/Password.Generator.io/
 
 This is a Password Generator built for a homework assignment and as such, follows certain parameters:
 
